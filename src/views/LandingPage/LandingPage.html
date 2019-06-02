@@ -1,0 +1,30 @@
+<div class="landingpage" >
+  <div class="landingpage-left">
+    <div class="landingpage-left-container">
+      <div class="landingpage-left-container__frame">
+        <img
+          src="https://res.cloudinary.com/mikekrantz/image/upload/v1559402623/Paul_Rimiru-7_1_1_1_1.jpg"
+          class="landingpage-left-container__frame-pic"/>
+      </div>
+    </div>
+  </div>
+  <div class="landingpage-right">
+    <div class="landingpage-right-container">
+      <div class="landingpage-right-container__intro">
+        <span class="landingpage-right-container__intro-title">Software <span>Engineer</span></span>
+        <span class="landingpage-right-container__intro-description">
+          Solidity and Full stack Web Developer
+        </span>
+      </div>
+      <div class="landingpage-right-container__socials">
+        <span class="landingpage-right-container__socials-text">FOLLOW ME ON: _______</span>
+        <img
+          v-for="social in socials"
+          :src="social.url"
+          alt="social media icon"
+          class="landingpage-right-container__socials-icon"
+        >
+      </div>
+    </div>
+  </div>
+</div>
