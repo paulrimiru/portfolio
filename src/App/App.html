@@ -1,0 +1,15 @@
+<div id="app">
+  <div class="app-nav">
+    <span class="app-nav__title">Portfolio</span>
+    <div class="app-nav__container">
+      <div
+        class="app-nav__container-button"
+        v-for="page in pages"
+        :key="page"
+      >
+        {{page}}
+      </div>
+    </div>
+  </div>
+  <LandingPage />
+</div>
