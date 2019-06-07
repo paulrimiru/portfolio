@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-container">
+    <div class="card-container__header">
+      <img
+        class="card-container__header-image"
+        :src="iconUrl"
+        alt="card header image"
+      >
+    </div>
+    <div class="card-container__body">
+      <span class="card-container__body-title">{{ title }}</span>
+      <span class="card-container__body-description">{{ description }}</span>
+    </div>
+    <div class="card-container__footer">
+      <div
+        class="card-container__footer-button"
+        @click="onLearnMoreClick()"
+      >Learn More</div>
+    </div>
+  </div>
+</div>

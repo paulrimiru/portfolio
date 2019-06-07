@@ -3,6 +3,11 @@
   height: 100vh;
 };
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .app-nav {
   position: absolute;
   top: 0;
@@ -56,4 +61,14 @@
       }
     }
   }
+}
+
+.app-values {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 800px;
+  padding: 24px;
 }

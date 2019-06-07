@@ -11,5 +11,17 @@
       </div>
     </div>
   </div>
-  <LandingPage />
+  <div class="app-container">
+    <LandingPage />
+    <div class="app-values">
+      <Card
+        v-for="(value, index) in values"
+        :title="value.title"
+        :iconUrl="value.iconUrl"
+        :description="value.description"
+        :onLearnMoreClick="value.onLearnMoreClick"
+        :key="index"
+      />
+    </div>
+  </div>
 </div>
