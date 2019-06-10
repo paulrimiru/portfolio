@@ -1,0 +1,26 @@
+<div class="portfolio">
+  <div class="portfolio-header">
+    <span class="portfolio-header__title">My Portfolio</span>
+    <span class="portfolio-header__subtitle">Web & Apps</span>
+  </div>
+  <div class="portfolio-container">
+    <div
+      class="portfolio-container__item"
+      v-for="(project, index) in projects"
+      :key="index">
+      <div class="portfolio-container__item-details">
+        <span class="portfolio-container__item-details-title">
+          {{ project }}
+        </span>
+        <span class="portfolio-container__item-details-description">
+          This is a very nice and unique description of the project
+        </span>
+      </div>
+      <img
+        class="portfolio-container__item-image"
+        src="https://res.cloudinary.com/mikekrantz/image/upload/v1559402623/Paul_Rimiru-7_1_1_1_1.jpg"
+        alt="portfolio image"
+      />
+    </div>
+  </div>
+</div>

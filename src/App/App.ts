@@ -2,6 +2,7 @@ import { Component, Vue } from 'vue-property-decorator';
 
 import LandingPage from '@/views/LandingPage/LandingPage';
 import Card from '@/components/Card/Card';
+import PortfolioPage from '@/views/PortfolioPage/PortfolioPage';
 
 @Component({
   data: () => ({
@@ -33,6 +34,7 @@ import Card from '@/components/Card/Card';
   components: {
     LandingPage,
     Card,
+    PortfolioPage,
   },
 })
 
