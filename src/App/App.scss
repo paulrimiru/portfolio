@@ -1,74 +1,152 @@
-#app {
+.app {
   position: relative;
   height: 100vh;
-};
+  font-family: Roboto;
 
-.app-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.app-nav {
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 80vw;
-  padding:31px;
-  margin-left: 106px;
-  z-index: 999;
-
-  &__title {
-    width: 141px;
-    height: 41px;
-    font-size: 35px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.17;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
+  &-container {
+    display: flex;
+    flex-direction: column;
   }
 
-  &__container {
+  &-testimonies {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: 16;
+    width: 100vw;
+    height: 626px;
+    margin-top: 101px;
   
-    &-button {
-      width: 202px;
-      height: 47px;
-      margin: 4px;
-      border-radius: 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &__title {
+      margin-bottom: 12px;
+      font-family: roboto;
+      font-size: 35px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.57;
+      letter-spacing: normal;
       text-align: center;
-      transition: color 500ms ease-in-out;
-      transition: background-color 300ms ease-in-out;
+      color: #202020;
+    }
+  
+    &__subtitle {
+      opacity: 0.5;
+      font-size: 18px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.11;
+      letter-spacing: normal;
+      text-align: center;
+      color: #202020;
+    }
+  
+    &__container {
+      height: 100%;
+    }
+  
+    &__carousel {
+      margin-top: 61px;
+      height: 400px !important;
+      padding: 8px;
+    }
 
-      &:hover {
-        cursor: pointer;
-        color: #ffffff;
-        background-color: #754ef9;
-        transition: color 500ms ease-in-out;
-        transition: background-color 300ms ease-in-out;
+    &__testimony {
+      &-title {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      &-description {
+        padding: 17px;
+        font-family: Roboto;
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
       }
     }
   }
+
+  &-nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80vw;
+    padding:31px;
+    margin-left: 106px;
+    z-index: 999;
+  
+    &__title {
+      width: 141px;
+      height: 41px;
+      font-size: 35px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.17;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 16;
+    
+      &-button {
+        width: 202px;
+        height: 47px;
+        margin: 4px;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: color 500ms ease-in-out;
+        transition: background-color 300ms ease-in-out;
+  
+        &:hover {
+          cursor: pointer;
+          color: #ffffff;
+          background-color: #754ef9;
+          transition: color 500ms ease-in-out;
+          transition: background-color 300ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  &-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 800px;
+    padding: 24px;
+  }
 }
 
-.app-values {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 800px;
-  padding: 24px;
+.carousel {
+  &-3d {
+    &-slider {
+      padding: 8px;
+    }
+    &-slide {
+      background-color: #ffffff;
+      border-width: 0px !important;
+      box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+    }
+  }
 }

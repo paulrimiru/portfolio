@@ -3,6 +3,8 @@ import { Component, Vue } from 'vue-property-decorator';
 import LandingPage from '@/views/LandingPage/LandingPage';
 import Card from '@/components/Card/Card';
 import PortfolioPage from '@/views/PortfolioPage/PortfolioPage';
+import { Carousel3d, Slide } from 'vue-carousel-3d';
+import { StyledDiv } from '@/components/Styled';
 
 @Component({
   data: () => ({
@@ -35,6 +37,9 @@ import PortfolioPage from '@/views/PortfolioPage/PortfolioPage';
     LandingPage,
     Card,
     PortfolioPage,
+    Carousel3d,
+    Slide,
+    StyledDiv,
   },
 })
 
