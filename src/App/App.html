@@ -1,4 +1,4 @@
-<div id="app">
+<div class="app">
   <div class="app-nav">
     <span class="app-nav__title">Portfolio</span>
     <div class="app-nav__container">
@@ -22,6 +22,66 @@
         :onLearnMoreClick="value.onLearnMoreClick"
         :key="index"
       />
+    </div>
+    <PortfolioPage />
+    <div class="app-testimonies">
+      <span class="app-testimonies__title">Valuable Testimonial</span>
+      <span class="app-testimonies__subtitle">See what people say about me</span>
+      <Carousel3d
+        class="app-testimonies__carousel"
+        :autoplay="true"
+        :clickable="false"
+        :controls-visible="true"
+        :autoplayHoverPause="true"
+        :autoplayTimeout="4000"
+        :width="500"
+        :height="360"
+      >
+        <Slide
+          v-for="(testimony, i) in values"
+          :index="i"
+          >
+          <StyledDiv :background="testimony.iconUrl">
+            <div class="app-testimonies__testimony-title">
+              {{ testimony.title }}
+            </div>
+            <div class="app-testimonies__testimony-description">
+              {{ testimony.description }}
+            </div>
+          </StyledDiv>
+        </Slide>
+      </Carousel3d>
+    </div>
+    <div class="app-hireme">
+      <div class="app-hireme__title">Want to hire me?</div>
+      <div class="app-hireme__subtitle">If you like my work</div>
+      <div class="app-hireme__input">
+        <input
+          class="app-hireme__input-input"
+          placeholder="enter your email"
+          />
+        <div class="app-hireme__input-button">Hire Me</div>
+      </div>
+    </div>
+  </div>
+  <div class="app-footer">
+    <div class="app-footer-title">Portfolio</div>
+    <div class="app-footer__links">
+      <div
+        class="app-footer__links-button"
+        v-for="page in pages"
+        :key="page"
+      >
+        {{page}}
+      </div>
+    </div>
+    <div class="app-footer__socials">
+      <img
+        v-for="social in socials"
+        :src="social.url"
+        alt="social media icon"
+        class="app-footer__socials-button"
+      >
     </div>
   </div>
 </div>

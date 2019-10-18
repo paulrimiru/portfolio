@@ -2,10 +2,27 @@ import { Component, Vue } from 'vue-property-decorator';
 
 import LandingPage from '@/views/LandingPage/LandingPage';
 import Card from '@/components/Card/Card';
+import PortfolioPage from '@/views/PortfolioPage/PortfolioPage';
+import { Carousel3d, Slide } from 'vue-carousel-3d';
+import { StyledDiv } from '@/components/Styled';
 
 @Component({
   data: () => ({
     pages: ['About Me', 'Portfolio', 'Download cv'],
+    socials: [
+      {
+        name: 'twitter',
+        url: 'https://res.cloudinary.com/mikekrantz/image/upload/v1569558477/Path_39.png',
+      },
+      {
+        name: 'github',
+        url: 'https://res.cloudinary.com/mikekrantz/image/upload/v1559462683/github-logo.svg',
+      },
+      {
+        name: 'linkedin',
+        url: 'https://res.cloudinary.com/mikekrantz/image/upload/v1571440104/Group_8.png',
+      },
+    ],
     values: [
       {
         title: 'On time',
@@ -33,6 +50,10 @@ import Card from '@/components/Card/Card';
   components: {
     LandingPage,
     Card,
+    PortfolioPage,
+    Carousel3d,
+    Slide,
+    StyledDiv,
   },
 })
 
