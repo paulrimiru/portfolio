@@ -9,6 +9,20 @@ import { StyledDiv } from '@/components/Styled';
 @Component({
   data: () => ({
     pages: ['About Me', 'Portfolio', 'Download cv'],
+    socials: [
+      {
+        name: 'twitter',
+        url: 'https://res.cloudinary.com/mikekrantz/image/upload/v1569558477/Path_39.png',
+      },
+      {
+        name: 'github',
+        url: 'https://res.cloudinary.com/mikekrantz/image/upload/v1559462683/github-logo.svg',
+      },
+      {
+        name: 'linkedin',
+        url: 'https://res.cloudinary.com/mikekrantz/image/upload/v1571440104/Group_8.png',
+      },
+    ],
     values: [
       {
         title: 'On time',

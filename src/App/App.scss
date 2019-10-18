@@ -136,6 +136,130 @@
     min-height: 800px;
     padding: 24px;
   }
+
+  &-hireme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+
+    &__title {
+      font-family: roboto;
+      font-size: 35px;
+      font-weight: 200;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.57;
+      letter-spacing: normal;
+      text-align: center;
+      color: #202020;
+    }
+
+    &__subtitle {
+      margin-top: 16px;
+      opacity: 0.5;
+      font-family: OpenSans;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 1.33;
+      letter-spacing: 0.18px;
+      text-align: center;
+      color: #202020;
+    }
+
+    &__input {
+      display: flex;
+      flex-direction: row;
+      margin-top: 64px;
+
+      &-input {
+        width: 250px;
+        height: 42px;
+        border: solid 1px #744df7;
+        padding-left: 16px;
+  
+        &::placeholder {
+          opacity: 0.3;
+          font-family: OpenSans;
+          font-size: 12px;
+          line-height: 2;
+          letter-spacing: 0.12px;
+          text-align: left;
+          color: #181818;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &-button {
+        width: 75px;
+        height: 46px;
+        background-color: #754ef9;
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 200;
+        font-stretch: condensed;
+        line-height: 46px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &-footer {
+    width: 100vw;
+    height: 160px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #754ef9;
+    color: #ffffff;
+
+    &-title {
+      font-family: TrebuchetMS;
+      font-size: 35px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.17;
+      letter-spacing: normal;
+      text-align: left;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+
+      &-button {
+        margin: 12px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__socials {
+      display: flex;
+      flex-direction: row;
+      
+      &-button {
+        width: 20px;
+        height: 20px;
+        margin: 12px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 .carousel {
