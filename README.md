@@ -1,5 +1,9 @@
 # portfolio
 
+## Project link
+
+[Portfolio](https://paulrimiru.github.io/portfolio/)
+
 ## Project setup
 ```
 yarn install
